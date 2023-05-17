@@ -13,6 +13,7 @@
 <nav>
 <p class="brand">Catalogo<strong>Bazar</strong></p>
 <ul>
+    <button class="toggle-mode">Mudar Modo</button>
     <l1><a href="#catalog">Catalog</a></l1>
     <l1><a href="#footer">About</a></l1>
     <l1><a href="#feature">Features</a></l1>
@@ -158,6 +159,13 @@
        </div>
     </div>
  </footer>
- 
+ <script>
+  const toggleModeButton = document.querySelector(".toggle-mode");
+
+toggleModeButton.addEventListener("click", function() {
+  document.body.classList.toggle("dark-mode");
+});
+</script>
+  
  
  
